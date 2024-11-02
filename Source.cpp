@@ -5,9 +5,18 @@ int tong(int a, int b)
 {
 	return a+b;
 }
-int hieu(int a, int b);
-int tich(int a, int b);
-float thuong(int a, int b);
+int hieu(int a, int b)
+{
+	return a - b;
+}
+int tich(int a, int b)
+{
+	return a*b;
+}
+float thuong(int a, int b)
+{
+	return a/b;
+}
 int main()
 {	
 	int a,b;
@@ -16,7 +25,10 @@ int main()
 	cin >> a;
 	cout << "nhap b: ";
 	cin >> b;
-	cout << "tong: " << tong(a,b);
+	cout << "Tong: " << tong(a,b);
+	cout << "Hieu: " << hieu(a,b);
+	cout << "Tich: " << tich(a,b);
+	cout << "thuong: " << thuong(a,b);
 	system("pause");
 	return 0;
 }
